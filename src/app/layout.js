@@ -1,14 +1,15 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { DataProvider } from "@/Context/dataContext";
+import SplashWrapper from "@/components/SplashWrapper";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import { JetBrains_Mono } from "next/font/google";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  style: ["normal", "italic"],
+  variable: "--font-jetbrains",
 });
 
 export const metadata = {
@@ -18,11 +19,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" data-theme="">
+      <body className={jetbrainsMono.className}>
+        <SplashWrapper></SplashWrapper>
+        <DataProvider>{children}</DataProvider>
+      </body>
     </html>
   );
 }
