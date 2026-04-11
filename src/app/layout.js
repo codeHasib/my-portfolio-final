@@ -4,6 +4,8 @@ import { DataProvider } from "@/Context/dataContext";
 import SplashWrapper from "@/components/SplashWrapper";
 
 import { JetBrains_Mono } from "next/font/google";
+import NavBar from "@/components/NavBar";
+import { ThemeProvider } from "@/Context/ThemeContext";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -19,10 +21,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme="">
+    <html lang="en" data-theme="light">
       <body className={jetbrainsMono.className}>
-        <SplashWrapper></SplashWrapper>
-        <DataProvider>{children}</DataProvider>
+        <ThemeProvider>
+          <SplashWrapper></SplashWrapper>
+          <NavBar></NavBar>
+          <DataProvider>{children}</DataProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
