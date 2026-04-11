@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ThemeToggle from "./ThemeToggle";
 import { ThemeProvider, useTheme } from "@/Context/ThemeContext";
+import ResumeButton from "./ResumeButton";
 
 const NavBar = () => {
   const pathName = usePathname();
@@ -118,6 +119,7 @@ const NavBar = () => {
       </div>
       <div className="navbar-end">
         <ThemeToggle></ThemeToggle>
+        <ResumeButton></ResumeButton>
       </div>
     </div>
   );

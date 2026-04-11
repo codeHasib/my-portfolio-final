@@ -36,7 +36,7 @@ export default function ThemeToggler() {
     <button onClick={toggleTheme}>
       {theme === "dark" ? (
         <svg
-          className={"h-10 w-10 fill-current"}
+          className={"h-7 w-7 lg:h-10 lg:w-10 md:h-10 md:w-10 fill-current"}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -44,7 +44,7 @@ export default function ThemeToggler() {
         </svg>
       ) : (
         <svg
-          className={"h-10 w-10 fill-current"}
+          className={"h-7 w-7 lg:h-10 lg:w-10 md:h-10 md:w-10 fill-current"}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
