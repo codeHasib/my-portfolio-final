@@ -1,0 +1,148 @@
+{
+  "skills": {
+    "frontend": [
+      { "id": 1, "name": "HTML5", "icon": "/images/skills/html.svg" },
+      { "id": 2, "name": "CSS3", "icon": "/images/skills/css3.svg" },
+      {
+        "id": 3,
+        "name": "JavaScript (ES6+)",
+        "icon": "/images/skills/js.svg"
+      },
+      {
+        "id": 4,
+        "name": "Tailwind CSS",
+        "icon": "/images/skills/tailwind.svg"
+      },
+      { "id": 5, "name": "React.js", "icon": "/images/skills/react.svg" },
+      { "id": 6, "name": "Next.js", "icon": "/images/skills/next.svg" },
+      {
+        "id": 7,
+        "name": "React Router",
+        "icon": "/images/skills/react-router.svg"
+      }
+    ],
+    "backend": [
+      { "id": 8, "name": "Node.js", "icon": "/images/skills/npm.svg" },
+      { "id": 9, "name": "Express.js", "icon": "/images/skills/express.svg" },
+      { "id": 10, "name": "MongoDB", "icon": "/images/skills/mongodb.svg" },
+      { "id": 12, "name": "REST APIs", "icon": "/images/skills/rest-api.svg" }
+    ],
+    "tools": [
+      { "id": 14, "name": "GitHub", "icon": "/images/skills/github.svg" },
+      { "id": 15, "name": "Postman", "icon": "/images/skills/postman.svg" },
+      { "id": 16, "name": "VS Code", "icon": "/images/skills/vscode.svg" },
+      { "id": 17, "name": "Vercel", "icon": "/images/skills/vercel.svg" },
+      { "id": 18, "name": "Netlify", "icon": "/images/skills/netlify.svg" }
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "ChickenWorld – Restaurant E-commerce Frontend",
+      "description": "A modern restaurant e-commerce frontend built with Next.js. Features include dynamic product listings, cart functionality, and a checkout form integrated with a third-party restaurant API.",
+      "technologies": ["Next.js", "React", "Tailwind CSS", "REST API"],
+      "image": "/images/projects/chicken-world.jpg",
+      "liveLink": "https://chickenworld-next.vercel.app/",
+      "repoLink": "https://github.com/codeHasib/food-app-nextjs",
+      "featured": true,
+      "category": "Next.js"
+    },
+    {
+      "id": 2,
+      "title": "Book Vibe",
+      "description": "A modern, persistent web application designed for book lovers to organize their reading journey. Built with React 19 and styled with Tailwind CSS v4, this app allows users to curate a personal bookshelf, track reading progress, and visualize data in real-time.",
+      "technologies": ["React", "Tailwind CSS", "Daisy UI", "Recharts"],
+      "image": "/images/projects/book-vibe.jpg",
+      "liveLink": "https://book-vibe-gules.vercel.app",
+      "repoLink": "https://github.com/codeHasib/PH-React-Book-Vibe",
+      "featured": true,
+      "category": "React"
+    },
+    {
+      "id": 3,
+      "title": "Digi-Tools",
+      "description": "Digi-Tools is a modern web application where users can explore and purchase subscriptions for various AI tools. It provides a smooth and interactive experience for selecting tools, managing a cart, and viewing the total subscription cost in real-time. The project focuses on clean UI design and user-friendly functionality.",
+      "technologies": ["React", "Tailwind CSS", "Daisy UI"],
+      "image": "/images/projects/digi-tools.png",
+      "liveLink": "https://b13-a6-digitools.netlify.app/",
+      "repoLink": "https://github.com/codeHasib/PH-B13-A6-DIGI-TOOLS",
+      "featured": true,
+      "category": "React"
+    },
+    {
+      "id": 4,
+      "title": "Type With Hasib",
+      "description": "An interactive, logic-driven typing assessment tool developed under the CoDeHaSiB brand. This application measures typing speed (WPM), accuracy, and error rates in real-time, providing instant feedback to the user.",
+      "technologies": ["HTML5", "CSS3", "JS(ES6+)"],
+      "image": "/images/projects/type-with-hasib.png",
+      "liveLink": "https://codehasib.github.io/Type-With-Hasib/",
+      "repoLink": "https://github.com/codeHasib/Type-With-Hasib",
+      "featured": true,
+      "category": "JS"
+    },
+    {
+      "id": 5,
+      "title": "Pay With Hasib",
+      "description": "A streamlined, interactive banking dashboard designed for modern financial management. This project focuses on a clean user experience (UX) for essential banking operations.",
+      "technologies": ["HTML5", "CSS3", "JS(ES6+)"],
+      "image": "/images/projects/pay-with-hasib.png",
+      "liveLink": "https://codehasib.github.io/PayWithHasib-banking-website/",
+      "repoLink": "https://github.com/codeHasib/PayWithHasib-banking-website",
+      "featured": true,
+      "category": "JS"
+    },
+    {
+      "id": 6,
+      "title": "Track My Time",
+      "description": "A robust time-management application developed under the CoDeHaSiB brand. This tool empowers users to log their daily activities, categorize them, and gain real-time insights into their time distribution.",
+      "technologies": ["HTML5", "CSS3", "JS(ES6+)"],
+      "image": "/images/projects/track-my-day.png",
+      "liveLink": "https://codehasib.github.io/track-my-time-codeHasib/",
+      "repoLink": "https://github.com/codeHasib/track-my-time-codeHasib",
+      "featured": true,
+      "category": "JS"
+    },
+    {
+      "id": 7,
+      "title": "Github Issue Tracker",
+      "description": "GitHub Issue Tracker is a modern web application designed to simulate and manage issue tracking workflows similar to GitHub. It allows users to explore, organize, and interact with issues in a clean and intuitive interface.The platform focuses on providing a smooth user experience for handling project-related tasks such as bug reports, feature requests, and development discussions. Issue tracking systems are widely used in software development to manage tasks, feedback, and collaboration efficiently . This project demonstrates a practical implementation of real-world issue management concepts with a responsive UI, dynamic data handling, and structured component architecture.",
+      "technologies": ["HTML5", "Tailwind CSS", "Daisy UI", "CSS3", "JS(ES6+)"],
+      "image": "/images/projects/github-issue.png",
+      "liveLink": "https://codehasib.github.io/PH-A05-GITHUB-ISSUE-TRACKER/",
+      "repoLink": "https://github.com/codeHasib/PH-A05-GITHUB-ISSUE-TRACKER",
+      "featured": true,
+      "category": "JS"
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "title": "Self-Taught Full Stack Web Development",
+      "institution": "Online Learning Platforms",
+      "duration": "2025 – Present",
+      "description": "Focused on mastering modern web technologies through hands-on projects and structured courses."
+    }
+  ],
+  "roadmap": [
+    {
+      "id": 1,
+      "title": "Frontend Development",
+      "status": "Completed"
+    },
+    {
+      "id": 2,
+      "title": "React & Next.js",
+      "status": "Completed"
+    },
+    {
+      "id": 3,
+      "title": "Backend Development",
+      "status": "In Progress"
+    },
+    {
+      "id": 4,
+      "title": "Full Stack Projects",
+      "status": "Upcoming"
+    }
+  ]
+}

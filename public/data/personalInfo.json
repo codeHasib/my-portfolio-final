@@ -1,0 +1,88 @@
+{
+  "personalInfo": {
+    "name": "Mohammad Hasib",
+    "title": "Full Stack Developer in Progress",
+    "tagline": "Building real-world applications with React, Next.js, Node.js, and MongoDB.",
+    "email": "mohammadhasib9827@gmail.com",
+    "location": "Chittagong, Bangladesh",
+    "availability": "Open to internships and freelance opportunities",
+    "bio": "I am a passionate and self-driven developer focused on building scalable and user-friendly web applications. My journey began with curiosity and evolved into a commitment to mastering full-stack development. I specialize in React, Next.js, Node.js, and MongoDB, and I believe in learning by building real-world projects.",
+    "longTermGoal": "To build intelligent systems that understand human emotions and provide meaningful support through technology."
+  },
+  "socialLinks": {
+    "github": "https://github.com/codeHasib",
+    "linkedin": "https://linkedin.com/in/codeHasib",
+    "vercel": "https://vercel.com/codeHasib"
+  },
+  "statistics": {
+    "projectsCompleted": 7,
+    "technologiesLearned": 16,
+    "githubRepositories": 24,
+    "daysOfCoding": 180
+  },
+  "blogs": [
+    {
+      "id": 1,
+      "title": "My Journey from Vanilla JavaScript to React and Next.js",
+      "date": "2025-11-15",
+      "excerpt": "A story of how I transitioned from manipulating the DOM manually to building modern, scalable applications using React and Next.js.",
+      "link": "#",
+      "image": "/images/blogs/html-react.jpg",
+      "tags": ["React", "Next.js", "JavaScript"]
+    },
+    {
+      "id": 2,
+      "title": "Building My First E-commerce Backend with Node.js and MongoDB",
+      "date": "2026-01-10",
+      "excerpt": "An overview of how I built RESTful APIs for products and orders using Express and MongoDB.",
+      "link": "#",
+      "image": "/images/blogs/e-commerce.jpg",
+      "tags": ["Node.js", "Express", "MongoDB"]
+    },
+    {
+      "id": 3,
+      "title": "Why Learning by Building Is the Best Way to Become a Developer",
+      "date": "2026-02-05",
+      "excerpt": "Insights into my hands-on approach to mastering web development through real-world projects.",
+      "link": "#",
+      "image": "/images/blogs/building.jpg",
+      "tags": ["Career", "Web Development"]
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Oliver James",
+      "position": "Frontend Developer",
+      "company": "Tech Solutions Ltd.",
+      "review": "Hasib is a dedicated and fast learner with excellent problem-solving skills. His commitment to building real-world projects sets him apart.",
+      "image": "/images/testimonials/male1.png",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Charlotte Elizabeth",
+      "position": "UI/UX Designer",
+      "company": "Creative Studio",
+      "review": "Working with Hasib has been a pleasure. He transforms ideas into functional and visually appealing applications.",
+      "image": "/images/testimonials/male2.png",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "Henry William",
+      "position": "Software Engineering Student",
+      "company": "Peer Reviewer",
+      "review": "Hasib's understanding of both frontend and backend development is impressive for his experience level.",
+      "image": "/images/testimonials/female.png",
+      "rating": 4
+    }
+  ],
+  "hobbies": [
+    "Building web applications",
+    "Learning new technologies",
+    "Reading about artificial intelligence",
+    "Solving programming challenges",
+    "Exploring modern UI/UX trends"
+  ]
+}
