@@ -4,6 +4,7 @@ import Image from "next/image";
 import TypingText from "./TypingTest";
 import { useTheme } from "@/Context/ThemeContext";
 import { motion } from "framer-motion";
+import GlitchText from "./GlitchText";
 
 const SPLASH_KEY = "splashShown";
 
@@ -60,7 +61,8 @@ const Hero = () => {
           HI, NAME IS
         </h1>
         <h1 className="text-4xl md:text-6xl lg:text-8xl font-extrabold mb-5">
-          MOHAMMAD HASIB
+          {/* MOHAMMAD HASIB */}
+          <GlitchText text={"MOHAMMAD HASIB"}></GlitchText>
         </h1>
       </motion.div>
 

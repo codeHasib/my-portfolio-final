@@ -8,7 +8,10 @@ export default function SplashScreen({ duration = 5000 }) {
 
   useEffect(() => {
     const exitTimer = setTimeout(() => setPhase("exit"), duration - 800);
-    const hideTimer = setTimeout(() => setVisible(false), duration);
+    const hideTimer = setTimeout(() => {
+      setVisible(false);
+      window.dispatchEvent(new Event("splashDone")); // 👈 only change
+    }, duration);
 
     return () => {
       clearTimeout(exitTimer);

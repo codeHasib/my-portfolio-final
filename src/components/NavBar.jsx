@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import ThemeToggle from "./ThemeToggle";
 import { ThemeProvider, useTheme } from "@/Context/ThemeContext";
 import ResumeButton from "./ResumeButton";
+import GlitchText from "./GlitchText";
 
 const NavBar = () => {
   const pathName = usePathname();
@@ -109,7 +110,9 @@ const NavBar = () => {
           <span className="text-3xl md:text-5xl lg:text-5xl font-bold text-gray-500">
             M
           </span>
-          <span className="text-3xl md:text-5xl lg:text-5xl font-bold">H</span>
+          <span className="text-3xl md:text-5xl lg:text-5xl font-bold">
+            H
+            </span>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
