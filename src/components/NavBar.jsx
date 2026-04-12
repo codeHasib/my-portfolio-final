@@ -63,7 +63,7 @@ const NavBar = () => {
   const { theme } = useTheme();
 
   return (
-    <div className="navbar py-3 px-4 md:px-6 lg:px-10 border-b border-gray-500 mb-10 md:justify-between">
+    <div className="navbar py-3 px-4 md:px-6 lg:px-10 border-b border-gray-500 mb-10 md:justify-between sticky top-0 left-0 z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

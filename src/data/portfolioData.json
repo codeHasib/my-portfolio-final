@@ -1,38 +1,106 @@
 {
   "skills": {
     "frontend": [
-      { "id": 1, "name": "HTML5", "icon": "/images/skills/html.svg" },
-      { "id": 2, "name": "CSS3", "icon": "/images/skills/css3.svg" },
+      {
+        "id": 1,
+        "name": "HTML5",
+        "icon": "/images/skills/html.svg",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+      },
+      {
+        "id": 2,
+        "name": "CSS3",
+        "icon": "/images/skills/css3.svg",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+      },
       {
         "id": 3,
         "name": "JavaScript (ES6+)",
-        "icon": "/images/skills/js.svg"
+        "icon": "/images/skills/js.svg",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
       },
       {
         "id": 4,
         "name": "Tailwind CSS",
-        "icon": "/images/skills/tailwind.svg"
+        "icon": "/images/skills/tailwind.svg",
+        "link": "https://tailwindcss.com/docs"
       },
-      { "id": 5, "name": "React.js", "icon": "/images/skills/react.svg" },
-      { "id": 6, "name": "Next.js", "icon": "/images/skills/next.svg" },
+      {
+        "id": 5,
+        "name": "React.js",
+        "icon": "/images/skills/react.svg",
+        "link": "https://react.dev/"
+      },
+      {
+        "id": 6,
+        "name": "Next.js",
+        "icon": "/images/skills/next.svg",
+        "link": "https://nextjs.org/docs"
+      },
       {
         "id": 7,
         "name": "React Router",
-        "icon": "/images/skills/react-router.svg"
+        "icon": "/images/skills/react-router.svg",
+        "link": "https://reactrouter.com/"
       }
     ],
     "backend": [
-      { "id": 8, "name": "Node.js", "icon": "/images/skills/npm.svg" },
-      { "id": 9, "name": "Express.js", "icon": "/images/skills/express.svg" },
-      { "id": 10, "name": "MongoDB", "icon": "/images/skills/mongodb.svg" },
-      { "id": 12, "name": "REST APIs", "icon": "/images/skills/rest-api.svg" }
+      {
+        "id": 8,
+        "name": "Node.js",
+        "icon": "/images/skills/nodejs.svg",
+        "link": "https://nodejs.org/en/docs"
+      },
+      {
+        "id": 9,
+        "name": "Express.js",
+        "icon": "/images/skills/express.svg",
+        "link": "https://expressjs.com/"
+      },
+      {
+        "id": 10,
+        "name": "MongoDB",
+        "icon": "/images/skills/mongodb.svg",
+        "link": "https://www.mongodb.com/docs/"
+      },
+      {
+        "id": 12,
+        "name": "REST APIs",
+        "icon": "/images/skills/rest-api.svg",
+        "link": "https://restfulapi.net/"
+      }
     ],
     "tools": [
-      { "id": 14, "name": "GitHub", "icon": "/images/skills/github.svg" },
-      { "id": 15, "name": "Postman", "icon": "/images/skills/postman.svg" },
-      { "id": 16, "name": "VS Code", "icon": "/images/skills/vscode.svg" },
-      { "id": 17, "name": "Vercel", "icon": "/images/skills/vercel.svg" },
-      { "id": 18, "name": "Netlify", "icon": "/images/skills/netlify.svg" }
+      {
+        "id": 14,
+        "name": "GitHub",
+        "icon": "/images/skills/github.svg",
+        "link": "https://docs.github.com/"
+      },
+      {
+        "id": 15,
+        "name": "Postman",
+        "icon": "/images/skills/postman.svg",
+        "link": "https://learning.postman.com/docs/getting-started/introduction/"
+      },
+      {
+        "id": 16,
+        "name": "VS Code",
+        "icon": "/images/skills/vscode.svg",
+        "link": "https://code.visualstudio.com/docs"
+      },
+      {
+        "id": 17,
+        "name": "Vercel",
+        "icon": "/images/skills/vercel.svg",
+        "link": "https://vercel.com/docs"
+      },
+      {
+        "id": 18,
+        "name": "Netlify",
+        "icon": "/images/skills/netlify.svg",
+        "link": "https://docs.netlify.com/"
+      }
     ]
   },
   "projects": [
