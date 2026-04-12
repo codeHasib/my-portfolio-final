@@ -19,7 +19,7 @@ export function ThemeProvider({ children }) {
     setTheme(next);
     localStorage.setItem("theme", next);
     document.documentElement.setAttribute("data-theme", next);
-    console.log("hey")
+    console.log("hey");
   };
 
   return (

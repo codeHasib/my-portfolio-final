@@ -6,6 +6,7 @@ import SplashWrapper from "@/components/SplashWrapper";
 import { JetBrains_Mono } from "next/font/google";
 import NavBar from "@/components/NavBar";
 import { ThemeProvider } from "@/Context/ThemeContext";
+import SplashScreen from "@/components/SplashScreen";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],

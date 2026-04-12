@@ -37,6 +37,7 @@ const Hero = () => {
             <Image
               width={280}
               height={280}
+              className="transition-all duration-300 hover:scale-130"
               src={"/myImg.png"}
               alt="Image of Mohammad Hasib"
             ></Image>
@@ -58,7 +59,7 @@ const Hero = () => {
         <h1 className="text-4xl md:text-6xl lg:text-8xl font-extrabold text-gray-500 mb-2">
           HI, NAME IS
         </h1>
-        <h1 className="text-4xl md:text-6xl lg:text-8xl font-extrabold">
+        <h1 className="text-4xl md:text-6xl lg:text-8xl font-extrabold mb-5">
           MOHAMMAD HASIB
         </h1>
       </motion.div>

@@ -55,14 +55,14 @@ export default function SplashScreen({ duration = 5000 }) {
         }
 
         .splash-word {
-          display: block;          
+          display: block;
           letter-spacing: -0.02em;
           line-height: 1.1;
           text-align: center;
         }
         .big-word {
         color: #ffffff;
-        }  
+        }
       `}</style>
 
       <div
