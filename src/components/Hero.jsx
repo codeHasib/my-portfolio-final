@@ -15,7 +15,7 @@ const Hero = () => {
     typeof window !== "undefined" &&
     sessionStorage.getItem(SPLASH_KEY) === "true";
 
-  const baseDelay = splashAlreadyShown ? 0 : 5;
+  const baseDelay = splashAlreadyShown ? 0 : 3.5;
 
   return (
     <div className="flex flex-col justify-center items-center">
