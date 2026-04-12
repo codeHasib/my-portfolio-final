@@ -1,7 +1,9 @@
+import Projects from "@/components/Projects";
+
 const ProjectsPage = () => {
   return (
     <div>
-        This is project Page
+      <Projects></Projects>
     </div>
   );
 };

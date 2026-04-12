@@ -106,7 +106,7 @@
   "projects": [
     {
       "id": 1,
-      "title": "ChickenWorld – Restaurant E-commerce Frontend",
+      "title": "ChickenWorld",
       "description": "A modern restaurant e-commerce frontend built with Next.js. Features include dynamic product listings, cart functionality, and a checkout form integrated with a third-party restaurant API.",
       "technologies": ["Next.js", "React", "Tailwind CSS", "REST API"],
       "image": "/images/projects/chicken-world.jpg",

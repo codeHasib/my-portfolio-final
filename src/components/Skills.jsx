@@ -22,7 +22,7 @@ const Skills = () => {
 
   return (
     <div className="border-b border-gray-600">
-      <div className="container mx-auto px-5 my-25 pb-15 ">
+      <div className="container mx-auto px-5 my-25 pb-15 uppercase">
         <motion.h2 
           initial="hidden"
           whileInView="visible"

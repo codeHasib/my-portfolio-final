@@ -25,11 +25,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="light">
       <body className={jetbrainsMono.className}>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.__splashStart = Date.now();`,
-          }}
-        />
         <ThemeProvider>
           <ParticleBackground></ParticleBackground>
           <SplashWrapper></SplashWrapper>
