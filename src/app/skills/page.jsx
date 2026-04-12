@@ -1,5 +1,11 @@
+import Skills from "@/components/Skills";
+
 const SkillsPage = () => {
-  return <div>This is skills page</div>;
+  return (
+    <div>
+      <Skills></Skills>
+    </div>
+  );
 };
 
 export default SkillsPage;

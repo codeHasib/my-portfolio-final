@@ -19,7 +19,7 @@ const Hero = () => {
   const baseDelay = splashAlreadyShown ? 0 : 3.5;
 
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center border-b border-gray-500 pb-30">
       <motion.div
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
