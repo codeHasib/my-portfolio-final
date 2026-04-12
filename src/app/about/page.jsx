@@ -1,5 +1,11 @@
+import About from "@/components/About";
+
 const AboutPage = () => {
-  return <div>This is about page</div>;
+  return (
+    <>
+      <About></About>
+    </>
+  );
 };
 
 export default AboutPage;
