@@ -1,7 +1,7 @@
 # CoDeHaSiB | My Portfolio
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/codeHasib/portfolio/main/public/readme.png" alt="Portfolio Banner" width="100%">
+  <img src="/public/readme.png" alt="Portfolio Banner" width="100%">
 </p>
 
 <h1 align="center">
