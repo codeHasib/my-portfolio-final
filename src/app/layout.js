@@ -8,6 +8,7 @@ import NavBar from "@/components/NavBar";
 import { ThemeProvider } from "@/Context/ThemeContext";
 import SplashScreen from "@/components/SplashScreen";
 import ParticleBackground from "@/components/ParticleBackground";
+import Footer from "@/components/Footer";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
           <SplashWrapper></SplashWrapper>
           <NavBar></NavBar>
           <DataProvider>{children}</DataProvider>
+          <Footer></Footer>
         </ThemeProvider>
       </body>
     </html>

@@ -9,7 +9,6 @@ import GlitchText from "./GlitchText";
 
 const NavBar = () => {
   const pathName = usePathname();
-  console.log(pathName);
   const links = (
     <>
       <li

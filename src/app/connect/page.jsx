@@ -1,9 +1,7 @@
-const BlogsPage = () => {
-  return (
-    <div>
-        This is blogs page
-    </div>
-  );
+import Connect from "@/components/Connect";
+
+const ConnectPage = () => {
+  return <Connect></Connect>;
 };
 
-export default BlogsPage;
+export default ConnectPage;

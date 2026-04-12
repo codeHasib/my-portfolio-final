@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Connect from "@/components/Connect";
 import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
@@ -13,7 +14,10 @@ const HomePage = () => {
       <div className="border-b border-gray-600">
         <About></About>
       </div>
-      <Experience></Experience>
+      <div className="border-b border-gray-600">
+        <Experience></Experience>
+      </div>
+      <Connect></Connect>
     </>
   );
 };
