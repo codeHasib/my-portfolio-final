@@ -10,6 +10,14 @@
   </a>
 </h1>
 
+## 🔗 Live Demo
+
+<p align="left">
+  <a href="https://codehasib-portfolio.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/LIVE_DEMO-CoDeHaSiB-white?style=for-the-badge&logo=vercel&logoColor=black" alt="Live Demo" />
+  </a>
+</p>
+
 ---
 
 ## 🚀 Overview
@@ -74,6 +82,7 @@ Horizontal "measuring-tape" tick marks via CSS gradients.
 ```
 
 ## 📈 Dev Stats
+
 Status: Backend Development (In Progress)
 
 Next Milestone: Integrating fully dynamic MERN backend for project management.
