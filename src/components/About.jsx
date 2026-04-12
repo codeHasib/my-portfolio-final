@@ -3,7 +3,7 @@
 import { usePortfolioData } from "@/Context/dataContext";
 import Image from "next/image";
 import myPic from "../../public/images/myself/about.png";
-import { motion } from "framer-motion"; // Added Framer Motion
+import { motion } from "framer-motion"; 
 import GlitchTextNum from "./GlitchTextNum";
 
 const About = () => {
@@ -19,7 +19,6 @@ const About = () => {
     daysOfCoding,
   } = stats;
 
-  // Animation Variants
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -38,7 +37,6 @@ const About = () => {
     },
   };
 
-  // Subtle Glitch Effect for Stats
   const glitchEffect = {
     visible: {
       x: [0, -2, 2, -1, 0],
@@ -46,7 +44,7 @@ const About = () => {
       transition: {
         duration: 0.2,
         repeat: Infinity,
-        repeatDelay: 3, // Occurs every 3 seconds
+        repeatDelay: 3, 
       },
     },
   };

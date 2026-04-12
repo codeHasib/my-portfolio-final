@@ -50,12 +50,21 @@ const NavBar = () => {
       </li>
       <li
         className={
-          pathName === "/blogs"
+          pathName === "/experience"
             ? "border border-gray-500 rounded-full bg-[#ffffff2c]"
             : "transition-all duration-200 ease-in-out hover:border hover:border-gray-500 hover:rounded-full"
         }
       >
-        <Link href={"/blogs"}> BLOGS </Link>
+        <Link href={"/experience"}> EXPERIENCE </Link>
+      </li>
+      <li
+        className={
+          pathName === "/connect"
+            ? "border border-gray-500 rounded-full bg-[#ffffff2c]"
+            : "transition-all duration-200 ease-in-out hover:border hover:border-gray-500 hover:rounded-full"
+        }
+      >
+        <Link href={"/connect"}> CONNECT </Link>
       </li>
     </>
   );
@@ -110,9 +119,7 @@ const NavBar = () => {
           <span className="text-3xl md:text-5xl lg:text-5xl font-bold text-gray-500">
             M
           </span>
-          <span className="text-3xl md:text-5xl lg:text-5xl font-bold">
-            H
-            </span>
+          <span className="text-3xl md:text-5xl lg:text-5xl font-bold">H</span>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">

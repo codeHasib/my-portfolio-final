@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
@@ -9,7 +10,10 @@ const HomePage = () => {
       <Hero />
       <Skills></Skills>
       <Projects></Projects>
-      <About></About>
+      <div className="border-b border-gray-600">
+        <About></About>
+      </div>
+      <Experience></Experience>
     </>
   );
 };
