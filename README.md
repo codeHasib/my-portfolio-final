@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CoDeHaSiB | My Portfolio
 
-## Getting Started
+<p align="center">
+  <img src="https://raw.githubusercontent.com/codeHasib/portfolio/main/public/portfolio-screenshot.png" alt="Portfolio Banner" width="100%">
+</p>
 
-First, run the development server:
+<h1 align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=35&pause=1000&color=FFFFFF&center=true&vCenter=true&width=600&lines=Hi%2C+this+is+Mohammad+Hasib;Welcome+to+my+portfolio" alt="Typing Effect" />
+  </a>
+</h1>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Overview
+
+A high-performance, cinematic developer portfolio built with the modern **MERN stack** ecosystem. This project focuses on a high-tech minimalist aesthetic, leveraging **Framer Motion** for a fluid, premium feel and **React 19** for cutting-edge performance.
+
+## 🛠️ Architecture.js
+
+```javascript
+const portfolioConfig = {
+  brand: "CoDeHaSiB",
+  developer: "Mohammad Hasib",
+  specialization: "MERN Stack / Full-Stack",
+  stack: [
+    "React 19",
+    "Next.js 15 (App Router)",
+    "Framer Motion",
+    "Tailwind CSS v4",
+    "MongoDB",
+  ],
+  features: {
+    animations: "Staggered Pop-Style Reveals",
+    timeline: "Futuristic Measuring-Tape UI",
+    theming: "Intelligent Dark/Light Logic",
+    interactivity: "3D Hover Effects & Spring Motion",
+  },
+};
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Key Modules
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. The "Pop" Animation System
+   Utilizes a custom staggerChildren logic in Framer Motion. Elements don't just appear; they grow and slide into place sequentially, creating a professional narrative flow.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Futuristic Timeline
+   A custom implementation of a vertical career path. Features:
 
-## Learn More
+Dynamic height drawing on scroll.
 
-To learn more about Next.js, take a look at the following resources:
+Glow-effect markers.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Horizontal "measuring-tape" tick marks via CSS gradients.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Responsive Project Cards
+   Designed with a "mobile-first" approach. Cards feature hover-based scaling and quick-access links to Live Demos and GitHub Repositories.
 
-## Deploy on Vercel
+## 📂 File System
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```javascript
+{
+  "app/": {
+    "projects/": "[id] - Dynamic Project Details",
+    "components/": {
+      "About.js": "3D Profile & Experience Stats",
+      "Connect.js": "Social Integration with Spring Motion",
+      "Timeline.js": "The Education & Roadmap System",
+      "Projects.js": "Staggered Card Listing"
+    }
+  },
+  "context/": "Theme & Data State Management"
+}
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📈 Dev Stats
+Status: Backend Development (In Progress)
+
+Next Milestone: Integrating fully dynamic MERN backend for project management.
+
+Stack Version: Tailwind CSS v4.0.0-alpha + daisyUI.
