@@ -3,7 +3,7 @@
 import { usePortfolioData } from "@/Context/dataContext";
 import Image from "next/image";
 import myPic from "../../public/images/myself/about.png";
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 import GlitchTextNum from "./GlitchTextNum";
 
 const About = () => {
@@ -44,7 +44,7 @@ const About = () => {
       transition: {
         duration: 0.2,
         repeat: Infinity,
-        repeatDelay: 3, 
+        repeatDelay: 3,
       },
     },
   };
@@ -71,16 +71,39 @@ const About = () => {
       </motion.h2>
 
       <div className="flex justify-center items-center flex-col gap-10 md:flex-row-reverse lg:flex-row-reverse">
-        <motion.div variants={popVariant} className="hover-3d flex-1">
+        {/* <motion.div
+          variants={popVariant}
+          className="hover-3d flex-1 h-[450px] "
+        >
           <figure className="rounded-2xl">
             <Image
-              className="rounded-2xl"
-              width={400}
-              height={400}
+              className="rounded-2xl object-contain"
+              fill
               src={myPic}
               alt="My Picture of working"
             ></Image>
           </figure>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </motion.div> */}
+
+        <motion.div variants={popVariant} className="hover-3d w-10/12 md:w-8/12 lg:w-[550px]">
+          <figure className="relative w-full aspect-[4/5] md:aspect-square lg:aspect-[4/5]">
+            <Image
+              src={myPic}
+              alt="My Picture of working"
+              fill
+              className="rounded-2xl object-cover"
+            />
+          </figure>
+
+          {/* your 3d layers */}
           <div></div>
           <div></div>
           <div></div>
@@ -114,10 +137,7 @@ const About = () => {
             { label: "Total Contributes", value: totalContributes },
             { label: "Total Days of Coding", value: daysOfCoding },
           ].map((stat, index) => (
-            <motion.div
-              key={index}
-              className="border-none text-center flex-1"
-            >
+            <motion.div key={index} className="border-none text-center flex-1">
               <div className="stat-value">
                 {<GlitchTextNum text={stat.value}></GlitchTextNum>}{" "}
               </div>
