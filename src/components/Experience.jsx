@@ -120,7 +120,7 @@ const Qualifications = () => {
   };
 
   return (
-    <section className=" text-white min-h-screen">
+    <section className="min-h-screen">
       <TimelineSection title="Education" data={data.education} />
       <TimelineSection title="Roadmap" data={data.roadmap} isRoadmap />
     </section>
