@@ -29,16 +29,15 @@ const Hero = () => {
           damping: 20,
           delay: baseDelay + 0.1,
         }}
-        className="relative h-[350px] w-[350px] p-[4px] rounded-full overflow-hidden bg-gray-500"
+        className="relative h-[350px] w-[350px] p-[4px] rounded-full overflow-hidden bg-gray-500 "
       >
         <div className="absolute inset-0 bg-[length:400%_400%] bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 animate-gradient rounded-full"></div>
 
-        <div className="relative h-full w-full bg-black rounded-full flex items-center justify-center text-white">
+        <div className="relative h-full w-full bg-black rounded-full flex items-center justify-center text-white ">
           <div className="rounded-full flex justify-center items-center">
             <Image
-              width={280}
-              height={280}
-              className="transition-all duration-300 hover:scale-130"
+              fill
+              className="transition-all duration-300 hover:scale-100 rounded-full"
               src={"/myImg.png"}
               alt="Image of Mohammad Hasib"
             ></Image>
