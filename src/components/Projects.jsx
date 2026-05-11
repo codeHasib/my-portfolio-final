@@ -35,15 +35,15 @@ const Projects = () => {
       viewport={{ once: true, amount: 0.1 }}
       variants={containerVariants}
     >
-      <motion.h2 
+      <motion.h2
         variants={popVariant}
         className="text-3xl md:text-7xl lg:text-9xl font-extrabold text-center mt-8 mb-15"
       >
         PROJECTS
       </motion.h2>
-      
-      <div className="flex flex-col gap-8"> 
-        {projects.map((item, ind) => (
+
+      <div className="flex flex-col gap-8">
+        {projects.toReversed().map((item, ind) => (
           <motion.div key={ind} variants={popVariant}>
             <ProjectsCard
               id={item.id}

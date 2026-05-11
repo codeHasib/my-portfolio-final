@@ -105,28 +105,6 @@
   },
   "projects": [
     {
-      "id": 1,
-      "title": "ChickenWorld",
-      "description": "A modern restaurant e-commerce frontend built with Next.js. Features include dynamic product listings, cart functionality, and a checkout form integrated with a third-party restaurant API.",
-      "technologies": ["Next.js", "React", "Tailwind CSS", "REST API"],
-      "image": "/images/projects/chicken-world.jpg",
-      "liveLink": "https://chickenworld-next.vercel.app/",
-      "repoLink": "https://github.com/codeHasib/food-app-nextjs",
-      "featured": true,
-      "category": "Next.js"
-    },
-    {
-      "id": 2,
-      "title": "Book Vibe",
-      "description": "A modern, persistent web application designed for book lovers to organize their reading journey. Built with React 19 and styled with Tailwind CSS v4, this app allows users to curate a personal bookshelf, track reading progress, and visualize data in real-time.",
-      "technologies": ["React", "Tailwind CSS", "Daisy UI", "Recharts"],
-      "image": "/images/projects/book-vibe.jpg",
-      "liveLink": "https://book-vibe-gules.vercel.app",
-      "repoLink": "https://github.com/codeHasib/PH-React-Book-Vibe",
-      "featured": true,
-      "category": "React"
-    },
-    {
       "id": 3,
       "title": "Digi-Tools",
       "description": "Digi-Tools is a modern web application where users can explore and purchase subscriptions for various AI tools. It provides a smooth and interactive experience for selecting tools, managing a cart, and viewing the total subscription cost in real-time. The project focuses on clean UI design and user-friendly functionality.",
@@ -182,9 +160,31 @@
       "category": "JS"
     },
     {
+      "id": 2,
+      "title": "Book Vibe",
+      "description": "A modern, persistent web application designed for book lovers to organize their reading journey. Built with React 19 and styled with Tailwind CSS v4, this app allows users to curate a personal bookshelf, track reading progress, and visualize data in real-time.",
+      "technologies": ["React", "Tailwind CSS", "Daisy UI", "Recharts"],
+      "image": "/images/projects/book-vibe.jpg",
+      "liveLink": "https://book-vibe-gules.vercel.app",
+      "repoLink": "https://github.com/codeHasib/PH-React-Book-Vibe",
+      "featured": true,
+      "category": "React"
+    },
+    {
+      "id": 1,
+      "title": "ChickenWorld",
+      "description": "A modern restaurant e-commerce frontend built with Next.js. Features include dynamic product listings, cart functionality, and a checkout form integrated with a third-party restaurant API.",
+      "technologies": ["Next.js", "React", "Tailwind CSS", "REST API"],
+      "image": "/images/projects/chicken-world.jpg",
+      "liveLink": "https://chickenworld-next.vercel.app/",
+      "repoLink": "https://github.com/codeHasib/food-app-nextjs",
+      "featured": true,
+      "category": "Next.js"
+    },
+    {
       "id": 8,
       "title": "Asta-Bazar (E-commerce Engine)",
-      "description": "GitHub Issue Tracker is a modern web application designed to simulate and manage issue tracking workflows similar to GitHub. It allows users to explore, organize, and interact with issues in a clean and intuitive interface.The platform focuses on providing a smooth user experience for handling project-related tasks such as bug reports, feature requests, and development discussions. Issue tracking systems are widely used in software development to manage tasks, feedback, and collaboration efficiently . This project demonstrates a practical implementation of real-world issue management concepts with a responsive UI, dynamic data handling, and structured component architecture.",
+      "description": "Full-stack e-commerce engine built with Next.js 14 and MongoDB. Engineered a seamless checkout flow with dynamic delivery logic and 'Cash on Delivery' integration. Developed an automated order notification system using Nodemailer for real-time admin alerts. Designed a 'Modern Utility' UI featuring responsive product galleries and Zustand-powered state management. Implemented a custom backend review system with moderation logic to ensure data integrity.",
       "technologies": [
         "Next.js",
         "React",
