@@ -6,7 +6,7 @@ import ProjectLinks from "./ProjectLinks";
 import GitHubIcon from "../../public/images/link/github.png";
 import LiveIcon from "../../public/images/link/live.png";
 import { useTheme } from "@/Context/ThemeContext";
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 
 const ProjectsCard = ({
   id,
@@ -65,8 +65,8 @@ const ProjectsCard = ({
         TECHNOLOGIES
       </motion.p>
 
-      <motion.div 
-        variants={itemVariants} 
+      <motion.div
+        variants={itemVariants}
         className="flex justify-center items-center flex-wrap gap-4"
       >
         {technologies.map((item, ind) => (
@@ -88,15 +88,20 @@ const ProjectsCard = ({
         ))}
       </motion.div>
 
-      <motion.div 
-        variants={itemVariants} 
+      <motion.div
+        variants={itemVariants}
         className="flex justify-center items-center flex-wrap my-4 gap-4"
       >
-        <ProjectLinks
-          icon={GitHubIcon}
-          text={"repo link"}
-          link={repoLink}
-        ></ProjectLinks>
+        {" "}
+        {repoLink ? (
+          <ProjectLinks
+            icon={GitHubIcon}
+            text={"repo link"}
+            link={repoLink}
+          ></ProjectLinks>
+        ) : (
+          ""
+        )}
         <ProjectLinks
           icon={LiveIcon}
           text={"demo"}

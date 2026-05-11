@@ -180,6 +180,24 @@
       "repoLink": "https://github.com/codeHasib/PH-A05-GITHUB-ISSUE-TRACKER",
       "featured": true,
       "category": "JS"
+    },
+    {
+      "id": 8,
+      "title": "Asta-Bazar (E-commerce Engine)",
+      "description": "GitHub Issue Tracker is a modern web application designed to simulate and manage issue tracking workflows similar to GitHub. It allows users to explore, organize, and interact with issues in a clean and intuitive interface.The platform focuses on providing a smooth user experience for handling project-related tasks such as bug reports, feature requests, and development discussions. Issue tracking systems are widely used in software development to manage tasks, feedback, and collaboration efficiently . This project demonstrates a practical implementation of real-world issue management concepts with a responsive UI, dynamic data handling, and structured component architecture.",
+      "technologies": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Zustand",
+        "MongoDB",
+        "Mongoose",
+        "Nodemailer"
+      ],
+      "image": "/images/projects/astabazar.png",
+      "liveLink": "https://www.astabazar.com/",
+      "featured": true,
+      "category": "Next.js"
     }
   ],
   "education": [
