@@ -128,7 +128,50 @@ const NavBar = () => {
       </div>
       <div className="navbar-end">
         <ThemeToggle></ThemeToggle>
-        <ResumeButton></ResumeButton>
+        {/* <ResumeButton></ResumeButton> */}
+
+        {/* You can open the modal using document.getElementById('ID').showModal() method */}
+        <button
+          onClick={() => document.getElementById("my_modal_4").showModal()}
+          className="h-7 w-7 lg:h-10 lg:w-10 md:h-10 md:w-10 rounded-full border flex justify-center items-center ml-3"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="size-4 md:size-6 lg:size-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"
+            />
+          </svg>
+        </button>
+        <dialog id="my_modal_4" className="modal font-bold uppercase">
+          <div className="modal-box w-11/12 max-w-5xl">
+            <p className="py-4">Are you sure you want to download my resume?</p>
+            <div className="modal-action">
+              <form method="dialog">
+                {/* if there is a button, it will close the modal */}
+                <button className="btn uppercase font-extrabold">Cancel</button>
+                <button className="btn bg-white text-black font-extrabold">
+                  {/* <ResumeButton></ResumeButton> */}
+                  <a
+                    href={"/Hasib_Premium_Resume.pdf"}
+                    download={"/Hasib_Premium_Resume.pdf"}
+                    title="Download Resume"
+                    className="uppercase"
+                  >
+                    Download Resume
+                  </a>
+                </button>
+              </form>
+            </div>
+          </div>
+        </dialog>
       </div>
     </div>
   );

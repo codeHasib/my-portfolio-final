@@ -28,40 +28,48 @@ const Connect = () => {
   // 2. Variants for the titles
   const titleVariantsLeft = {
     hidden: { opacity: 0, x: -50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
   };
 
   const titleVariantsRight = {
     hidden: { opacity: 0, x: 50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
   };
 
   // 3. Variant for social icons
   const iconPop = {
     hidden: { opacity: 0, scale: 0.5, y: 20 },
-    visible: { 
-      opacity: 1, 
-      scale: 1, 
-      y: 0, 
-      transition: { type: "spring", stiffness: 200, damping: 10 } 
+    visible: {
+      opacity: 1,
+      scale: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 200, damping: 10 },
     },
   };
 
   return (
-    <motion.div 
+    <motion.div
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
       variants={containerVariants}
-      className="py-25 overflow-hidden min-h-screen"
+      className="py-25 overflow-hidden flex flex-col justify-center items-center min-h-screen"
     >
-      <motion.h2 
+      <motion.h2
         variants={titleVariantsLeft}
         className="text-4xl md:text-6xl lg:text-9xl font-extrabold text-center text-gray-500"
       >
         GET IN
       </motion.h2>
-      <motion.h2 
+      <motion.h2
         variants={titleVariantsRight}
         className="text-4xl md:text-6xl lg:text-9xl font-extrabold text-center"
       >
@@ -69,8 +77,6 @@ const Connect = () => {
       </motion.h2>
 
       <div className="flex justify-center items-center gap-4 my-10 flex-wrap px-4">
-
-        
         <motion.div variants={iconPop}>
           <ProjectLinks
             icon={GitIcon}
@@ -81,7 +87,7 @@ const Connect = () => {
 
         <motion.div variants={iconPop}>
           <ProjectLinks
-            link={`mailto:${socialLinks.email}`} 
+            link={`mailto:${socialLinks.email}`}
             text={"EMAIL"}
             icon={EmailIcon}
           />
