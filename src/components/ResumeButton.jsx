@@ -2,7 +2,7 @@ const ResumeButton = () => {
   return (
     <a
       href={"/Hasib_Premium_Resume.pdf"}
-      download={"/Hasib_Premium_Resume.pdf"}
+      download={"/Mohammad_Hasib_Resume.pdf"}
       title="Download Resume"
       className="btn btn-accent"
     >
