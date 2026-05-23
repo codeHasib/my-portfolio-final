@@ -198,6 +198,24 @@
       "liveLink": "https://www.astabazar.com/",
       "featured": true,
       "category": "Next.js"
+    },
+    {
+      "id": 9,
+      "title": "Rescume",
+      "description": "A comprehensive pet adoption platform featuring a secure adoption pipeline. Users can list pets for adoption, manage incoming requests, and track application statuses through a real-time dashboard integrated with JWT-protected workflows.",
+      "technologies": [
+        "Next.js 15",
+        "Express.js",
+        "MongoDB",
+        "Better Auth",
+        "Tailwind CSS",
+        "JWT/JWKS"
+      ],
+      "image": "/images/projects/rescume.png",
+      "liveLink": "https://rescume-mu.vercel.app",
+      "repoLink": "https://github.com/codeHasib/rescume",
+      "featured": true,
+      "category": "Full Stack"
     }
   ],
   "education": [
