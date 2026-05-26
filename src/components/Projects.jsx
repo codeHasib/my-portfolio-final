@@ -3,10 +3,21 @@
 import { usePortfolioData } from "@/Context/dataContext";
 import ProjectsCard from "./ProjectsCard";
 import { motion } from "framer-motion"; // Added Framer Motion
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 
-const Projects = () => {
+const Projects = ({ home = false }) => {
   const { skillsData } = usePortfolioData();
-  const projects = skillsData.projects;
+  // const projects = skillsData.projects;
+  const [projects, setProjects] = useState([]);
+  useEffect(() => {
+    if (home) {
+      setProjects(skillsData.projects.slice(-3));
+    } else {
+      setProjects(skillsData.projects);
+    }
+  }, []);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -56,6 +67,18 @@ const Projects = () => {
           </motion.div>
         ))}
       </div>
+      {home ? (
+        <div className="text-center flex justify-center items-center">
+          <Link
+            className="uppercase text-center flex justify-center items-center gap-3 duration-300 transition-all ease-in-out hover:text-white hover:bg-black btn bg-white text-black rounded-full"
+            href={"/projects"}
+          >
+            See All Projects <FaArrowRight></FaArrowRight>
+          </Link>
+        </div>
+      ) : (
+        ""
+      )}
     </motion.div>
   );
 };

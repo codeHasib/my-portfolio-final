@@ -54,6 +54,12 @@
         "name": "Zustand",
         "icon": "/images/skills/zustand.svg",
         "link": "https://zustand-demo.pmnd.rs/"
+      },
+      {
+        "id": 10,
+        "name": "TypeScript",
+        "icon": "/images/skills/typescript.svg",
+        "link": "https://www.typescriptlang.org"
       }
     ],
     "backend": [
@@ -227,7 +233,7 @@
       "image": "/images/projects/astabazar.png",
       "liveLink": "https://www.astabazar.com/",
       "featured": true,
-      "category": "Next.js"
+      "category": "Full Stack"
     },
     {
       "id": 9,

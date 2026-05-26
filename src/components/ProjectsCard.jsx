@@ -18,96 +18,58 @@ const ProjectsCard = ({
 }) => {
   const { theme } = useTheme();
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, scale: 0.9, y: 10 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      y: 0,
-      transition: { duration: 0.4, ease: "easeOut" },
-    },
-  };
-
   return (
     <motion.div
-      initial="hidden"
-      whileInView="visible"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
-      variants={containerVariants}
-      className="flex flex-col justify-center items-center gap-5 border-b border-[#8080802b] mb-6 uppercase"
+      className={`group relative overflow-hidden rounded-3xl border border-[#8080802b] transition-all duration-300 p-6 mb-8 ${
+        theme === "dark"
+          ? "bg-[#1a1a1a]/40 hover:bg-[#1a1a1a]/60"
+          : "bg-gray-50 hover:bg-white"
+      }`}
     >
-      <motion.div variants={itemVariants}>
-        <Link href={`/projects/${id}`}>
-          <div className="rounded-3xl overflow-hidden transition-all duration-200 ease-in-out hover:shadow-lg hover:shadow-[#7f7f7f] hover:scale-105">
-            <Image width={250} height={150} src={image} alt={title}></Image>
+      <div className="flex flex-col lg:flex-row gap-8 items-center">
+        {/* Project Image Section */}
+        <div className="relative w-full lg:w-2/5 overflow-hidden rounded-2xl aspect-video">
+          <Link href={`/projects/${id}`}>
+            <Image
+              src={image}
+              alt={title}
+              width={500}
+              height={300}
+              className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+            />
+          </Link>
+        </div>
+
+        {/* Project Content Section */}
+        <div className="flex-1 w-full space-y-4">
+          <h3 className="text-3xl md:text-5xl font-black uppercase tracking-tighter">
+            {title}
+          </h3>
+
+          <div className="flex flex-wrap gap-2">
+            {technologies.map((tech, index) => (
+              <span
+                key={index}
+                className={`text-[11px] font-bold px-4 py-1.5 rounded-full border border-gray-500/30 uppercase ${
+                  theme === "dark" ? "text-gray-400" : "text-gray-600"
+                }`}
+              >
+                {tech}
+              </span>
+            ))}
           </div>
-        </Link>
-      </motion.div>
 
-      <motion.div variants={itemVariants} className="text-center my-4">
-        <h3 className="text-2xl md:text-4xl lg:text-6xl font-extrabold">
-          {" "}
-          {title}{" "}
-        </h3>
-      </motion.div>
-
-      <motion.p variants={itemVariants} className="font-bold">
-        TECHNOLOGIES
-      </motion.p>
-
-      <motion.div
-        variants={itemVariants}
-        className="flex justify-center items-center flex-wrap gap-4"
-      >
-        {technologies.map((item, ind) => (
-          <div
-            key={ind}
-            className={`py-2 px-5 text-[12px] rounded-full border border-gray-500 transition-all duration-200 ease-in-out hover:scale-115 ${
-              theme === "dark" ? "hover:bg-[#ffffff52]" : "hover:bg-[#f9f7f78a]"
-            } ${
-              theme === "dark" ? "hover:text-white" : "hover:text-black"
-            } flex justify-center items-center ${
-              theme === "dark" ? "text-gray-300" : "text-gray-800"
-            } ${
-              theme === "dark" ? "hover:border-white" : "hover:border-black"
-            } hover:shadow-sm bg-[#ffffff00]`}
-          >
-            {" "}
-            {item}{" "}
+          <div className="flex items-center gap-6 pt-4">
+            {repoLink && (
+              <ProjectLinks icon={GitHubIcon} text="Repo" link={repoLink} />
+            )}
+            <ProjectLinks icon={LiveIcon} text="Live" link={liveLink} />
           </div>
-        ))}
-      </motion.div>
-
-      <motion.div
-        variants={itemVariants}
-        className="flex justify-center items-center flex-wrap my-4 gap-4"
-      >
-        {" "}
-        {repoLink ? (
-          <ProjectLinks
-            icon={GitHubIcon}
-            text={"repo link"}
-            link={repoLink}
-          ></ProjectLinks>
-        ) : (
-          ""
-        )}
-        <ProjectLinks
-          icon={LiveIcon}
-          text={"demo"}
-          link={liveLink}
-        ></ProjectLinks>
-      </motion.div>
+        </div>
+      </div>
     </motion.div>
   );
 };

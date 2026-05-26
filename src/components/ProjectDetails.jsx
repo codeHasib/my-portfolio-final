@@ -50,11 +50,14 @@ const ProjectDetails = ({ currentProject }) => {
       variants={containerVariants}
       className="flex flex-col gap-5 justify-start items-center lg:flex-row md:flex-row min-h-[70vh] px-5 uppercase pb-5"
     >
-      <motion.div
-        variants={itemVariants}
-        className="flex-1"
-      >
-        <Image className="rounded-3xl" height={500} width={500} src={image} alt={title}></Image>
+      <motion.div variants={itemVariants} className="flex-1">
+        <Image
+          className="rounded-3xl"
+          height={500}
+          width={500}
+          src={image}
+          alt={title}
+        ></Image>
       </motion.div>
       <div className="flex-1 space-y-4">
         <motion.h2
@@ -97,11 +100,15 @@ const ProjectDetails = ({ currentProject }) => {
             text={"demo"}
             link={liveLink}
           ></ProjectLinks>
-          <ProjectLinks
-            icon={GitHubIcon}
-            text={"repo link"}
-            link={repoLink}
-          ></ProjectLinks>
+          {repoLink ? (
+            <ProjectLinks
+              icon={GitHubIcon}
+              text={"repo link"}
+              link={repoLink}
+            ></ProjectLinks>
+          ) : (
+            ""
+          )}
         </motion.div>
         <motion.div variants={itemVariants} className="text-center">
           <button

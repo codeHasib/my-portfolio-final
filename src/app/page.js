@@ -10,7 +10,7 @@ const HomePage = () => {
     <>
       <Hero />
       <Skills></Skills>
-      <Projects></Projects>
+      <Projects home={true}></Projects>
       <div className="border-b border-gray-600">
         <About></About>
       </div>
