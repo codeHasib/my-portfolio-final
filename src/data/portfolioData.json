@@ -252,6 +252,26 @@
       "repoLink": "https://github.com/codeHasib/rescume",
       "featured": true,
       "category": "Full Stack"
+    },
+    {
+      "id": 10,
+      "title": "NeuroDesk",
+      "description": "A high-performance productivity workspace demonstrating advanced TypeScript architecture. Features an end-to-end type-safe ecosystem with custom generic hooks for state management, strict interface-driven API integrations, and complex Framer Motion orchestration for a seamless 'Modern Utility' UI.",
+      "technologies": [
+        "TypeScript (Strict Mode)",
+        "Next.js 15 (App Router)",
+        "Express.js & Mongoose",
+        "Better Auth",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Generic React Hooks",
+        "Zod Validation"
+      ],
+      "image": "/images/projects/neurodesk.png",
+      "liveLink": "https://neurodesk-beta.vercel.app",
+      "repoLink": "https://github.com/codeHasib/neurodesk",
+      "featured": true,
+      "category": "Full Stack"
     }
   ],
   "education": [
