@@ -131,7 +131,7 @@ const NavBar = () => {
         {/* <ResumeButton></ResumeButton> */}
 
         {/* You can open the modal using document.getElementById('ID').showModal() method */}
-        <button
+        {/* <button
           onClick={() => document.getElementById("my_modal_4").showModal()}
           className="h-7 w-7 lg:h-10 lg:w-10 md:h-10 md:w-10 rounded-full border flex justify-center items-center ml-3"
         >
@@ -155,10 +155,8 @@ const NavBar = () => {
             <p className="py-4">Are you sure you want to download my resume?</p>
             <div className="modal-action">
               <form method="dialog">
-                {/* if there is a button, it will close the modal */}
                 <button className="btn uppercase font-extrabold">Cancel</button>
                 <button className="btn bg-white text-black font-extrabold">
-                  {/* <ResumeButton></ResumeButton> */}
                   <a
                     href={"/Hasib_Premium_Resume.pdf"}
                     download={"/Hasib_Premium_Resume.pdf"}
@@ -171,7 +169,8 @@ const NavBar = () => {
               </form>
             </div>
           </div>
-        </dialog>
+        </dialog> */}
+        <ResumeButton />
       </div>
     </div>
   );
