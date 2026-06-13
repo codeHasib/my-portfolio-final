@@ -2,7 +2,7 @@ import Projects from "@/components/Projects";
 
 const ProjectsPage = () => {
   return (
-    <div>
+    <div className="px-15">
       <Projects></Projects>
     </div>
   );

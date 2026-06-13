@@ -10,7 +10,9 @@ const HomePage = () => {
     <>
       <Hero />
       <Skills></Skills>
-      <Projects home={true}></Projects>
+      <div className="px-15">
+        <Projects home={true}></Projects>
+      </div>
       <div className="border-b border-gray-600">
         <About></About>
       </div>
