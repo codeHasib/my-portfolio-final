@@ -254,6 +254,25 @@
       "category": "Full Stack"
     },
     {
+      "id": 11,
+      "title": "LevenVerse | Online Shoe Shop In Qatar",
+      "description": "A production-grade e-commerce platform built for the premium footwear market in Qatar. Designed with a focus on performance, seamless user experience, and real-world business workflows.",
+      "technologies": [
+        "JS(ES6+)",
+        "Next.js 15 (App Router)",
+        "Express.js & Mongoose",
+        "Better Auth",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Generic React Hooks",
+        "Zod Validation"
+      ],
+      "image": "/images/projects/levenverse.png",
+      "liveLink": "https://www.levenverse.com/",
+      "featured": true,
+      "category": "Full Stack"
+    },
+    {
       "id": 10,
       "title": "NeuroDesk",
       "description": "A high-performance productivity workspace demonstrating advanced TypeScript architecture. Features an end-to-end type-safe ecosystem with custom generic hooks for state management, strict interface-driven API integrations, and complex Framer Motion orchestration for a seamless 'Modern Utility' UI.",
