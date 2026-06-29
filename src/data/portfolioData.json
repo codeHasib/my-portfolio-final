@@ -291,6 +291,26 @@
       "repoLink": "https://github.com/codeHasib/neurodesk",
       "featured": true,
       "category": "Full Stack"
+    },
+    {
+      "id": 11,
+      "title": "Routemate",
+      "description": "RouteMate is a high-fidelity, utility-first travel ticket procurement and vendor logistics management platform. Engineered for seamless deployment on the Next.js App Router and optimized with a robust Node.js/Mongoose ecosystem, it enables transit operators to orchestrate route listings, audit ticket allocations, and review transaction ledgers with extreme precision.",
+      "technologies": [
+        "Javascript ES6+",
+        "Next.js 15 (App Router)",
+        "Express.js & MongoDB",
+        "Better Auth",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Generic React Hooks",
+        "Zod Validation"
+      ],
+      "image": "/images/projects/routemate.png",
+      "liveLink": "https://routemate-six.vercel.app",
+      "repoLink": "https://github.com/codeHasib/routemate",
+      "featured": true,
+      "category": "Full Stack"
     }
   ],
   "education": [
