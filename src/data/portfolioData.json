@@ -142,6 +142,17 @@
   "projects": [
     {
       "id": 3,
+      "title": "InventraAI",
+      "description": "Architected a production-ready, intelligent inventory workspace optimizing real-time tracking, cloud data integrity, and automated business flow metrics. The platform integrates advanced AI-driven analytics for predictive inventory management, ensuring seamless operational efficiency and data-driven decision-making.",
+      "technologies": ["NextJS", "Tailwind CSS", "TypeScript (Strict Mode)", "Motion", "Express.js & MongoDB", "Groq AI API"],
+      "image": "/images/projects/inventraai.png",
+      "liveLink": "https://inventra-ai-lac.vercel.app",
+      "repoLink": "https://github.com/codeHasib/inventraAI",
+      "featured": true,
+      "category": "Next.js"
+    },
+    {
+      "id": 3,
       "title": "Digi-Tools",
       "description": "Digi-Tools is a modern web application where users can explore and purchase subscriptions for various AI tools. It provides a smooth and interactive experience for selecting tools, managing a cart, and viewing the total subscription cost in real-time. The project focuses on clean UI design and user-friendly functionality.",
       "technologies": ["React", "Tailwind CSS", "Daisy UI"],
